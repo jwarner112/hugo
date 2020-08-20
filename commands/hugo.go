@@ -295,7 +295,7 @@ func (c *commandeer) fullBuild() error {
 	)
 
 	if !c.h.quiet {
-		fmt.Print(ifTerminal(hideCursor) + "Building sites … ")
+		fmt.Println(ifTerminal(hideCursor) + "Building sites … ")
 		if isTerminal() {
 			defer func() {
 				fmt.Print(showCursor + clearLine)
